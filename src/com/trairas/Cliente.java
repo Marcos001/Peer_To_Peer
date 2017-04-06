@@ -122,7 +122,6 @@ input = new ObjectInputStream(client.getInputStream());
 private void sendData(String message){
 
 try{
-
 output.writeObject(message);
 output.flush();//esvazia a saida para o cliente
 displayMessage("\nCLIENTE>>"+message);
